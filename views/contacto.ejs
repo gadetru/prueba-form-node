@@ -1,0 +1,58 @@
+
+<div class="contenedor-ppal">
+    <div class="contacto" >
+
+        <div >
+            <img src="/img/hogar.png" alt="icono casa">
+            <div class="datos-contacto">
+                <h4>California United States</h4>
+                <p>Santa monica Bullevard</p>
+            </div>
+        </div>
+
+        <div >
+            <img src="/img/auriculares.png" alt="icono auriculares">
+            <div class="datos-contacto">
+                <h4>00(440)9865 562</h4>
+                <p>Mon to Fri 9am to 6pm</p>
+            </div>
+        </div>
+        <div>
+            <img src="/img/correo-electronico.png" alt="icono sobre">
+            <div  class="datos-contacto">
+                <h4>support@colorlib.com</h4>
+                <p>Send us your query anytime!</p>
+            </div>
+        </div>
+    </div>
+
+    
+    <form class="formulario" action="/contacto/enviar" method="post">
+        <div class="columna-centro">
+        <!-- Input para el nombre -->
+        <label for="nombre"></label>
+        <input class="input" type="text" id="nombre" name="nombre" placeholder="Enter your name" required>
+
+        <!-- Input para el correo electrónico -->
+        <label for="correo"></label>
+        <input class="input" type="email" id="correo" name="correo" placeholder="Enter email address" required>
+
+        <!-- Input para el asunto -->
+        <label for="asunto"></label>
+        <input class="input" type="text" id="asunto" name="asunto" placeholder="entry subject" required>
+
+    </div>
+    <div class="columna-derecha">
+
+        <!-- Área de texto para el mensaje -->
+        <label for="mensaje"></label>
+        <textarea id="mensaje" name="mensaje" rows="10" cols="20" placeholder="Enter menssage" required></textarea>
+
+        <!-- Botón de enviar -->
+        <button type="submit">Send Message</button>
+    </div>
+    </form>
+
+    
+</div>
+
