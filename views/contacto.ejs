@@ -31,11 +31,11 @@
         <div class="columna-centro">
         <!-- Input para el nombre -->
         <label for="nombre"></label>
-        <input class="input" type="text" id="nombre" name="nombre" placeholder="Enter your name" required>
+        <input class="input" type="text" id="nombre" name="nombre" placeholder="Enter your name" maxlength="50" required>
 
         <!-- Input para el correo electrónico -->
         <label for="correo"></label>
-        <input class="input" type="email" id="correo" name="correo" placeholder="Enter email address" required>
+        <input class="input" type="email" id="correo" name="correo" placeholder="Enter email address" maxlength="100" required>
 
         <!-- Input para el asunto -->
         <label for="asunto"></label>
@@ -46,7 +46,7 @@
 
         <!-- Área de texto para el mensaje -->
         <label for="mensaje"></label>
-        <textarea id="mensaje" name="mensaje" rows="10" cols="20" placeholder="Enter menssage" required></textarea>
+        <textarea id="mensaje" name="mensaje" rows="10" cols="20" placeholder="Enter menssage" maxlength="500"required></textarea>
 
         <!-- Botón de enviar -->
         <button type="submit">Send Message</button>
