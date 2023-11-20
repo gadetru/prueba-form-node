@@ -31,7 +31,8 @@ app.use("/tos", tosRouter);
 app.use("/contacto", contactoRouter);
 
 app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`);
+  console.log(`app listening on port ${port} click on http://localhost:${port}`);
+  
 });
 
 
