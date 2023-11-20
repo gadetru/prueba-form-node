@@ -26,7 +26,7 @@ app.use(express.static(path.join(__dirname, "/public")));
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 // Ruta base del servidor: localhost:3000
-app.use("/home", homeRouter);
+app.use("/", homeRouter);
 app.use("/tos", tosRouter);
 app.use("/contacto", contactoRouter);
 
