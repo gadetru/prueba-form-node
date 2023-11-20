@@ -21,7 +21,7 @@ class ContactoCtrl {
 
       await newQuery.save();
       nodemailer(correo, nombre);
-      res.redirect('/home');
+      res.redirect('/');
     } catch (error) {
       // Manejar el error de manera adecuada
       console.error('Error en la creación de la consulta:', error.message);
