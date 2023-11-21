@@ -21,7 +21,7 @@ class ContactoCtrl {
 
       await newQuery.save();
       nodemailer(correo, nombre);
-      res.redirect('/');
+      res.redirect('/contacto/preguntas');
     } catch (error) {
       // Manejar el error de manera adecuada
       console.error('Error en la creación de la consulta:', error.message);
@@ -30,6 +30,14 @@ class ContactoCtrl {
       res.status(500).send('Hubo un error en el servidor');
     }
   };
+
+  renderizar = async(req,res) =>{
+
+    const queries = await userQuery.find();
+    res.render('navbar',{body:'preguntas',queries:queries})
+    console.log(queries);
+
+  }
 }
 
 module.exports = new ContactoCtrl;

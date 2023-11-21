@@ -1,0 +1,15 @@
+<h1 class="mis-consultas"> Consultas:</h1>
+<h2 class="consultas-explicacion">Aquí te creo una lista con todas las preguntas del formulario anterior registradas.</h2>
+<!-- ESTOY TRABAJANDO EN ESTA VISTA -->
+<ul class="caja-preguntas">
+    <% queries.forEach(function(querie) { %>
+        <div class="pregunta">
+        <h3>El usuario :</h3>
+        <h2><%= querie.username %></h2>
+        <h3>Quiere saber :</h3>
+        <p><%= querie.userQuery %></p>
+        </div>
+    
+        <!-- Asegúrate de adaptar "nombre" al campo específico de tus datos -->
+    <% }); %>
+</ul>

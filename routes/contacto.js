@@ -8,6 +8,10 @@ const router = express.Router();
 router.get("/", (req, res) => {
     res.render('navbar',{body:'contacto'});
 });
+// localhost:3000/contacto/preguntas
+router.get("/preguntas",contactoCtrl.renderizar);
+
+
 
 router.post("/enviar", contactoCtrl.crear);
 

@@ -29,6 +29,7 @@ app.use(express.json());
 app.use("/", homeRouter);
 app.use("/tos", tosRouter);
 app.use("/contacto", contactoRouter);
+app.use("/contacto/preguntas", contactoRouter);
 
 app.listen(port, () => {
   console.log(`app listening on port ${port} click on http://localhost:${port}`);
