@@ -21,7 +21,11 @@
             <button ><a class="<%= path === '/tos' ? 'marcado' : '' %>" href="/tos">ToS</a></button>
             <button  ><a class="<%= path === '/contacto' ? 'marcado' : '' %>"href="/contacto">Contacto</a></button>
           </div>
-          <div class="burguer">burguer</div>
+          <div class="icon nav-icon-2">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </nav>
     </header>
     <main >
@@ -30,4 +34,17 @@
   
 
   </body>
+
+  <script>
+    const icons = document.querySelectorAll('.icon');
+    const botones = document.querySelector('.botones');
+  
+    icons.forEach(icon => {
+      icon.addEventListener('click', (event) => {
+        icon.classList.toggle("open");
+        botones.classList.toggle("open");
+      });
+    });
+  </script>
+  
 </html>
