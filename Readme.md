@@ -8,12 +8,12 @@ npm install
 ```
 
 * Crear un archivo .env con las variables de entorno que te proporciono
-a continuación para ésta prueba( Por seguridad voy a quitar mis variables de entorno ):
+a continuación para ésta prueba ( las puede sustituir por las suyas propias)
 
 ```
-MONGODBURL = tu base de datos
-AUTHEMAIL = tu correo autenticado 
-AUTHPASS = tu contraseña
+MONGODBURL = mongodb+srv://gabriel:admin@cluster0.amcrry7.mongodb.net/miapp?retryWrites=true&w=majority
+AUTHEMAIL = gadetru@gmail.com
+AUTHPASS = dczqkjhzeotvvnjo
 ```
 
 * para desplegar el proyecto utilice el comando por consola:

@@ -61,3 +61,14 @@ main{
 .marcado{
   border-bottom: 4px solid black;
 }
+
+
+  /* Estilos para pantallas de 720px hasta 1079px */
+  @media screen and (min-width: 720px) and (max-width: 1079px) {
+    
+  }
+  
+  /* Estilos para pantallas de 370px hasta 719px */
+@media screen and (min-width: 370px) and (max-width: 719px) {
+    
+  }
